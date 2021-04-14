@@ -1,0 +1,7 @@
+C:\Users\vincz\source\repos\20210414-Mozulzaro\20210414-Mozulzaro\bin\Debug\20210414-Mozulzaro.exe.config
+C:\Users\vincz\source\repos\20210414-Mozulzaro\20210414-Mozulzaro\bin\Debug\20210414-Mozulzaro.exe
+C:\Users\vincz\source\repos\20210414-Mozulzaro\20210414-Mozulzaro\bin\Debug\20210414-Mozulzaro.pdb
+C:\Users\vincz\source\repos\20210414-Mozulzaro\20210414-Mozulzaro\obj\Debug\20210414-Mozulzaro.csprojAssemblyReference.cache
+C:\Users\vincz\source\repos\20210414-Mozulzaro\20210414-Mozulzaro\obj\Debug\20210414-Mozulzaro.csproj.CoreCompileInputs.cache
+C:\Users\vincz\source\repos\20210414-Mozulzaro\20210414-Mozulzaro\obj\Debug\20210414-Mozulzaro.exe
+C:\Users\vincz\source\repos\20210414-Mozulzaro\20210414-Mozulzaro\obj\Debug\20210414-Mozulzaro.pdb
