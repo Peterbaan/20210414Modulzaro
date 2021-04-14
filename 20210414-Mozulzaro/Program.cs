@@ -21,19 +21,23 @@ namespace _20210414_Mozulzaro
             int N = balkezes.Count;
             Console.WriteLine($"1. Feladat: {N} veresenyző van");  //1. Feladat
 
-            int első = Balkezesek.első;
-            int[] Elso = első;
+
+            int[] Elso = Balkezesek.első;               //2.Feladat
             int Db1980Felett;
-            for (i = 0; i < N; i++) { if (Balkezesek.első == 1980) { Db1980Felett++; } }
+            for (i = 0; i < N; i++) { if (Elso == 1980) { Db1980Felett++; } }
             Console.WriteLine($"2. Feladat: {Db1980Felett} veresenyző lépett 1980-ban pályára először");
 
-
-            Console.WriteLine("Adjon meg egy évszámot 1900 és 1999 között!");  //4. Feladat
-            int Bekeres = int.Parse(Console.ReadLine());
+            //4. Feladat
+            int Bekeres = Feladat4Bekeres();
             if (!(1900 <= Bekeres && Bekeres <= 1999))
-            { }
-            else 
-            { Console.WriteLine("Hibás adat, adja meg újra!"); }
+            {
+                Console.WriteLine("Helyes adat");
+            }
+            else
+            {
+                Console.WriteLine("Hibás adat, adja meg újra!");
+                Feladat4Bekeres();
+            }
 
 
             int minIndex = 0;   //5.Feladat
@@ -51,10 +55,30 @@ namespace _20210414_Mozulzaro
 
             int JohnDB = 0;         //7.Feladat
             for (i = 0; i < N; i++) { if (Balkezesek.név[i] == "John") { JohnDB++; } }
+            Console.WriteLine("${johnDB}");
 
+            string fn= "statisztika.txt";
+            string kimenet = Balkezesek.név;
+            File.WriteAllText(fn, kimenet);
 
+            string[] kiirandoSorok = new string[1];
+            File.WriteAllLines(fn, kiirandoSorok);
+
+            List<string> kerNev = new List<string>();
+            foreach (string kerNev in sorok)
+            {
+                kerNev.Add($"{Balkezesek.név}\n");
+            }
+            File.WriteAllLines("Kernevek.txt", kerNev.ToArray());
 
             Console.ReadLine();
+        }
+
+        private static int Feladat4Bekeres()
+        {
+            Console.WriteLine("Adjon meg egy évszámot 1900 és 1999 között!");
+            int Bekeres = int.Parse(Console.ReadLine());
+            return Bekeres;
         }
     }
 }
