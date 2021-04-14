@@ -26,6 +26,10 @@ namespace _20210414_Mozulzaro
 
         }
 
+        public Balkezesek()
+        {
+        }
+
         public static int Count { get; internal set; }
     }
 }

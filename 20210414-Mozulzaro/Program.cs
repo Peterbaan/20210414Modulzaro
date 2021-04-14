@@ -27,6 +27,21 @@ namespace _20210414_Mozulzaro
             for (i = 0; i < N; i++) { if (Elso == 1980) { Db1980Felett++; } }
             Console.WriteLine($"2. Feladat: {Db1980Felett} veresenyző lépett 1980-ban pályára először");
 
+            //3. Feladat
+            int MagassagCm = Balkezesek.magasság * 2,54;
+
+            int NevBekeres = Feladat3Bekeres();
+            if (NevBekeres = List<Balkezesek>.Név;)
+            {
+                Console.WriteLine("Helyes adat");
+            }
+            else
+            {
+                Console.WriteLine("Hibás adat, adja meg újra!");
+                Feladat3Bekeres();
+            }
+
+
             //4. Feladat
             int Bekeres = Feladat4Bekeres();
             if (!(1900 <= Bekeres && Bekeres <= 1999))
@@ -57,7 +72,8 @@ namespace _20210414_Mozulzaro
             for (i = 0; i < N; i++) { if (Balkezesek.név[i] == "John") { JohnDB++; } }
             Console.WriteLine("${johnDB}");
 
-            string fn= "statisztika.txt";
+            //8. Feladat
+            string fn = "statisztika.txt";
             string kimenet = Balkezesek.név;
             File.WriteAllText(fn, kimenet);
 
@@ -72,6 +88,12 @@ namespace _20210414_Mozulzaro
             File.WriteAllLines("Kernevek.txt", kerNev.ToArray());
 
             Console.ReadLine();
+        }
+
+        private static void Feladat3Bekeres()
+        {
+            Console.WriteLine("Adjon meg egy nevet!");
+            string nevBekeres = Console.ReadLine();
         }
 
         private static int Feladat4Bekeres()
